@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Halaman Kedua - Survey</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h3 style="text-align: center;">Survey Lagu</h3>
+        </div>
+        <form action="">
+            <label for="nama">Nama</label><br>
+            <input type="text" placeholder="Nama anda" id="nama"><br><br>
+
+            <label for="tanggal">Tanggal</label><br>
+            <input type="date" id="tanggal"><br><br>
+
+            <label for="pilihan">Jenis Lagu yang Anda Suka:</label><br>
+            <select id="pilihan">
+                <option value="2019">HipHop</option>
+                <option value="2020">Jazz</option>
+                <option value="2021">Rock</option>
+                <option value="2022">Dangdut</option>
+            </select><br><br>
+
+            <p>Rating Lagu Ini:</p>
+            <input type="radio" name="peminatan" id="programming" value="programming">
+            <label for="programming">Bagus</label><br>
+            <input type="radio" name="peminatan" id="desain" value="desain">
+            <label for="programming">Lumayan</label><br>
+            <input type="radio" name="peminatan" id="jaringan" value="jaringan">
+            <label for="programming">Biasa</label><br>
+            <input type="radio" name="peminatan" id="data" value="data">
+            <label for="programming">Tidak Suka</label><br><br>
+
+            <label for="">Bagaimana Pendapat Anda Tentang Lagu Ini</label><br>
+            <textarea placeholder="Tulis Jawabanmu disini" name="alamat" id="alamat" cols="30" rows="5"></textarea><br><br>
+
+            <label for="">Saran Lagu Lainnya</label><br>
+            <textarea placeholder="Tulis Jawabanmu disini" name="alamat" id="alamat" cols="30" rows="5"></textarea><br><br>
+
+            <button type="submit" onclick="kirimData()">Kirim</button>
+        </form>
+    </div>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    document.getElementById('surveyForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      var name = document.getElementById('nameInput').value;
+      var email = document.getElementById('emailInput').value;
+      var message = document.getElementById('messageInput').value;
+      var result = document.getElementById('result');
+
+      result.innerHTML = '<h3>Hasil Survey:</h3>' +
+        '<p>Nama: ' + name + '</p>' +
+        '<p>Email: ' + email + '</p>' +
+        '<p>Pesan: ' + message + '</p>';
+
+        

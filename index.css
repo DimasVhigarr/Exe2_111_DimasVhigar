@@ -1,0 +1,23 @@
+body{
+    background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.com%2Ffree-photos-vectors%2Fbackground&psig=AOvVaw0jgZWMEhXruaQbk9o2aa4m&ust=1687189658203000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCMCtmrGVzf8CFQAAAAAdAAAAABAM);
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: cover;
+}
+
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    border: 2px solid #000000;
+    background-color: darkolivegreen;
+    color: 1px 1px 2px #000000;
+    border-radius: 10px;
+    padding: 3px 10px;
+    cursor: pointer;
+}
